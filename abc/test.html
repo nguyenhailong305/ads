@@ -1,4 +1,3 @@
-<!doctype html>
 <html
   lang="vi"
   data-locator-client-url="chrome-extension://npbfdllefekhdplbkdigpncggmojpefi/client.bundle.js"
@@ -43,6 +42,24 @@
       crossorigin="*"
     ></script>
     <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/static/main.MWI2MzlmMWJmMQ.js"
+      data-id="CFMARB3C77U1MMAFA2O0"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/static/main.MWI2MzlmMWJmMQ.js"
+      data-id="CFG7203C77U110MKA4MG"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/static/main.MWI2MzlmMWJmMA.js"
+      data-id="CG99OJBC77U082QFC8JG"
+    ></script>
+    <script
       async=""
       crossorigin="anonymous"
       src="https://edge.fullstory.com/s/fs.js"
@@ -68,7 +85,63 @@
       async=""
       src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CFMARB3C77U1MMAFA2O0&amp;lib=ttq"
     ></script>
-
+    <script type="text/javascript">
+      window.ladi_viewport = function () {
+        var screen_width = window.ladi_screen_width || window.screen.width;
+        var width = window.outerWidth > 0 ? window.outerWidth : screen_width;
+        var widthDevice = width;
+        var is_desktop = false;
+        var content = "";
+        if (
+          typeof window.ladi_is_desktop == "undefined" ||
+          window.ladi_is_desktop == undefined
+        ) {
+          window.ladi_is_desktop = is_desktop;
+        }
+        if (!is_desktop) {
+          widthDevice = 420;
+        } else {
+          widthDevice = 960;
+        }
+        content = "width=" + widthDevice + ", user-scalable=no";
+        var scale = 1;
+        if (!is_desktop && widthDevice != screen_width && screen_width > 0) {
+          scale = screen_width / widthDevice;
+        }
+        if (scale != 1) {
+          content +=
+            ", initial-scale=" +
+            scale +
+            ", minimum-scale=" +
+            scale +
+            ", maximum-scale=" +
+            scale;
+        }
+        var docViewport = document.getElementById("viewport");
+        if (!docViewport) {
+          docViewport = document.createElement("meta");
+          docViewport.setAttribute("id", "viewport");
+          docViewport.setAttribute("name", "viewport");
+          document.head.appendChild(docViewport);
+        }
+        docViewport.setAttribute("content", content);
+      };
+      window.ladi_viewport();
+      window.ladi_fbq_data = [];
+      window.ladi_fbq = function (
+        track_name,
+        conversion_name,
+        data,
+        event_data
+      ) {
+        window.ladi_fbq_data.push([
+          track_name,
+          conversion_name,
+          data,
+          event_data,
+        ]);
+      };
+    </script>
     <meta
       id="viewport"
       name="viewport"
@@ -5521,7 +5594,7 @@
         padding: 0 16px;
         line-height: 1.5;
         background: rgba(32, 26, 25, 0.8);
-        text-shadow: 0px 1px 4px black;
+        // text-shadow: 0px 1px 4px black;
         padding: 0 8px;
 
         lineheight: 1.2;
@@ -5631,6 +5704,10 @@
         color: #0cb1c7;
       }
     </style>
+    <script
+      charset="utf-8"
+      src="https://analytics.tiktok.com/i18n/pixel/static/identify_738b3.js"
+    ></script>
     <style type="text/css">
       .TnITTtw-fp-collapsed-button {
         display: none;
@@ -6699,7 +6776,62 @@
       charset="utf-8"
       src="https://embed.tawk.to/_s/v4/app/642b759ae8c/js/twk-chunk-32507910.js"
     ></script>
-
+    <style type="text/css">
+      #irouotpe5nf81684578986160 {
+        outline: none !important;
+        visibility: visible !important;
+        resize: none !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+        background: none !important;
+        opacity: 1 !important;
+        filter: alpha(opacity=100) !important;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important;
+        -mz-opacity: 1 !important;
+        -khtml-opacity: 1 !important;
+        top: auto !important;
+        right: 0px !important;
+        bottom: 0px !important;
+        left: auto !important;
+        position: fixed !important;
+        border: 0 !important;
+        min-height: 0px !important;
+        min-width: 0px !important;
+        max-height: none !important;
+        max-width: none !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        -moz-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        -o-transition-property: none !important;
+        transition-property: none !important;
+        transform: none !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        width: auto !important;
+        height: auto !important;
+        display: none !important;
+        z-index: 2000000000 !important;
+        background-color: transparent !important;
+        cursor: none !important;
+        float: none !important;
+        border-radius: unset !important;
+        pointer-events: auto !important;
+        clip: auto !important;
+        color-scheme: light !important;
+      }
+      #irouotpe5nf81684578986160.widget-hidden {
+        display: none !important;
+      }
+      #irouotpe5nf81684578986160.widget-visible {
+        display: block !important;
+      }
+      @media print {
+        #irouotpe5nf81684578986160.widget-visible {
+          display: none !important;
+        }
+      }
+    </style>
     <script
       src="https://cdn.jsdelivr.net/emojione/2.2.7/lib/js/emojione.min.js"
       type="text/javascript"
@@ -6712,6 +6844,74 @@
       async=""
       defer=""
     ></script>
+    <style type="text/css">
+      @keyframes tawkMaxOpen {
+        0% {
+          opacity: 0;
+          transform: translate(0, 30px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0px);
+        }
+      }
+      @-moz-keyframes tawkMaxOpen {
+        0% {
+          opacity: 0;
+          transform: translate(0, 30px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0px);
+        }
+      }
+      @-webkit-keyframes tawkMaxOpen {
+        0% {
+          opacity: 0;
+          transform: translate(0, 30px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0px);
+        }
+      }
+      #c8g0vonfqjgg1684578986315.open {
+        animation: tawkMaxOpen 0.25s ease !important;
+      }
+      @keyframes tawkMaxClose {
+        from {
+          opacity: 1;
+          transform: translate(0, 0px);
+        }
+        to {
+          opacity: 0;
+          transform: translate(0, 30px);
+        }
+      }
+      @-moz-keyframes tawkMaxClose {
+        from {
+          opacity: 1;
+          transform: translate(0, 0px);
+        }
+        to {
+          opacity: 0;
+          transform: translate(0, 30px);
+        }
+      }
+      @-webkit-keyframes tawkMaxClose {
+        from {
+          opacity: 1;
+          transform: translate(0, 0px);
+        }
+        to {
+          opacity: 0;
+          transform: translate(0, 30px);
+        }
+      }
+      #c8g0vonfqjgg1684578986315.closed {
+        animation: tawkMaxClose 0.25s ease !important;
+      }
+    </style>
   </head>
   <body
     data-new-gr-c-s-check-loaded="14.1110.0"
@@ -6814,13 +7014,12 @@
             id="GALLERY2"
             class="ladi-element"
             data-max-item="8"
-            data-runtime-id="wtbPcTsNGX"
-            data-current="5"
+            data-runtime-id="jkpQHkOysH"
+            data-current="3"
             data-is-next="true"
             data-scrolled="true"
             data-loaded="true"
-            data-next-time="1684572849511"
-            data-stop="true"
+            data-next-time="1684579003736"
           >
             <div class="ladi-gallery ladi-gallery-bottom">
               <div class="ladi-gallery-view">
@@ -6830,31 +7029,56 @@
                 <div
                   class="ladi-gallery-view-arrow ladi-gallery-view-arrow-right"
                 ></div>
-                <div class="ladi-gallery-view-item" data-index="0"></div>
+                <div
+                  class="ladi-gallery-view-item"
+                  data-index="0"
+                  data-lazyload="true"
+                ></div>
                 <div class="ladi-gallery-view-item" data-index="1"></div>
                 <div class="ladi-gallery-view-item" data-index="2"></div>
-                <div class="ladi-gallery-view-item" data-index="3"></div>
-                <div class="ladi-gallery-view-item" data-index="4"></div>
                 <div
                   class="ladi-gallery-view-item selected"
-                  data-index="5"
+                  data-index="3"
                 ></div>
+                <div class="ladi-gallery-view-item" data-index="4"></div>
+                <div class="ladi-gallery-view-item" data-index="5"></div>
                 <div class="ladi-gallery-view-item" data-index="6"></div>
                 <div class="ladi-gallery-view-item" data-index="7"></div>
               </div>
               <div class="ladi-gallery-control">
-                <div class="ladi-gallery-control-box" style="left: -368px">
-                  <div class="ladi-gallery-control-item" data-index="0"></div>
-                  <div class="ladi-gallery-control-item" data-index="1"></div>
-                  <div class="ladi-gallery-control-item" data-index="2"></div>
-                  <div class="ladi-gallery-control-item" data-index="3"></div>
-                  <div class="ladi-gallery-control-item" data-index="4"></div>
+                <div class="ladi-gallery-control-box" style="left: -156px">
                   <div
-                    class="ladi-gallery-control-item selected"
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="0"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="1"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="2"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload selected"
+                    data-index="3"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="4"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
                     data-index="5"
                   ></div>
-                  <div class="ladi-gallery-control-item" data-index="6"></div>
-                  <div class="ladi-gallery-control-item" data-index="7"></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="6"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="7"
+                  ></div>
                 </div>
                 <div
                   class="ladi-gallery-control-arrow ladi-gallery-control-arrow-left"
@@ -6878,7 +7102,7 @@
           <div
             id="NOTIFY1"
             class="ladi-element ladi-notify-transition"
-            style=""
+            style="opacity: 0; top: -162px"
           >
             <div class="ladi-notify">
               <div class="ladi-notify-image">
@@ -6886,9 +7110,9 @@
                   src="https://www.ehenho.com/media/2075/45/30/19/44/187679/187679.jpg"
                 />
               </div>
-              <div class="ladi-notify-title">Ngô Trí Lan</div>
-              <div class="ladi-notify-content">"ĐẶT MUA TẶNG 3"</div>
-              <div class="ladi-notify-time">17 phút trước</div>
+              <div class="ladi-notify-title">Nguyễn Thùy Linh</div>
+              <div class="ladi-notify-content">"ĐẶT MUA COMBO 4 TẶNG 2"</div>
+              <div class="ladi-notify-time">4 phút trước</div>
             </div>
           </div>
           <a href="tel:0334397693" id="IMAGE77" class="ladi-element"
@@ -6907,21 +7131,21 @@
         </div>
       </div>
       <div id="SECTION2" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE15" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="IMAGE18" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="IMAGE25" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div
@@ -6932,7 +7156,7 @@
             <form autocomplete="off" method="post" class="ladi-form">
               <div id="FORM_ITEM12" class="ladi-element">
                 <div class="ladi-form-item-container">
-                  <div class="ladi-form-item-background"></div>
+                  <div class="ladi-form-item-background ladi-lazyload"></div>
                   <div class="ladi-form-item">
                     <input
                       autocomplete="off"
@@ -6949,7 +7173,7 @@
               </div>
               <div id="FORM_ITEM13" class="ladi-element">
                 <div class="ladi-form-item-container">
-                  <div class="ladi-form-item-background"></div>
+                  <div class="ladi-form-item-background ladi-lazyload"></div>
                   <div class="ladi-form-item">
                     <input
                       autocomplete="off"
@@ -6965,14 +7189,16 @@
                   </div>
                 </div>
               </div>
-              <div id="BUTTON7" class="ladi-element ladi-animation">
+              <div id="BUTTON7" class="ladi-element ladi-animation-hidden">
                 <div class="ladi-button ladi-transition">
-                  <div class="ladi-button-background"></div>
+                  <div class="ladi-button-background ladi-lazyload"></div>
                   <div
                     id="BUTTON_TEXT7"
                     class="ladi-element ladi-button-headline"
                   >
-                    <p class="ladi-headline ladi-transition">ĐĂNG KÝ ƯU TIÊN</p>
+                    <p class="ladi-headline ladi-transition ladi-lazyload">
+                      ĐĂNG KÝ ƯU TIÊN
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6982,27 +7208,27 @@
         </div>
       </div>
       <div id="SECTION14" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="GROUP30" class="ladi-element">
             <div class="ladi-group">
               <div id="IMAGE76" class="ladi-element">
                 <div class="ladi-image ladi-transition">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
               <div id="HEADLINE67" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Nguồn sữa từ bò New Zealand<br />
                 </h3>
               </div>
               <div id="HEADLINE68" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Công thức ALA cải tiến vượt trội<br />
                 </h3>
               </div>
               <div id="HEADLINE69" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   36 loại vitamin, khoáng chất khác<br />
                 </h3>
               </div>
@@ -7011,11 +7237,11 @@
         </div>
       </div>
       <div id="SECTION6" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE74" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="GROUP21" class="ladi-element">
@@ -7032,14 +7258,18 @@
                             </div>
                           </div>
                           <div id="BOX27" class="ladi-element">
-                            <div class="ladi-box ladi-transition"></div>
+                            <div
+                              class="ladi-box ladi-transition ladi-lazyload"
+                            ></div>
                           </div>
                         </div>
                       </div>
                       <div id="GROUP25" class="ladi-element">
                         <div class="ladi-group">
                           <div id="BOX28" class="ladi-element">
-                            <div class="ladi-box ladi-transition"></div>
+                            <div
+                              class="ladi-box ladi-transition ladi-lazyload"
+                            ></div>
                           </div>
                           <div id="PARAGRAPH12" class="ladi-element">
                             <div class="ladi-paragraph ladi-transition">
@@ -7065,11 +7295,11 @@
               </div>
               <div id="IMAGE66" class="ladi-element">
                 <div class="ladi-image ladi-transition">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
               <div id="HEADLINE54" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   <span style="font-weight: 700"
                     >Hợp tác chuyển giao độc quyền công nghệ Nano canxi vào sữa
                     non tiểu đường HÀNG ĐẦU tại Việt Nam</span
@@ -7085,7 +7315,7 @@
               </div>
               <div id="IMAGE67" class="ladi-element">
                 <div class="ladi-image ladi-transition">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
             </div>
@@ -7093,59 +7323,59 @@
         </div>
       </div>
       <div id="SECTION4" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE28" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="GROUP7" class="ladi-element">
             <div class="ladi-group">
               <div id="IMAGE27" class="ladi-element">
                 <div class="ladi-image ladi-transition">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
               <div id="HEADLINE12" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   TIỂU ĐƯỜNG TUÝP 1,2<br />TIỂU ĐƯỜNG THAI KỲ<br />
                 </h3>
               </div>
               <div id="HEADLINE13" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Những người đang bị tiểu đường, tiền tiểu đường và có nguy cơ
                   mắc tiểu đường<br />
                 </h3>
               </div>
               <div id="HEADLINE14" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   TĂNG CƯỜNG SỨC ĐỀ KHÁNG<br />
                 </h3>
               </div>
               <div id="HEADLINE15" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Người cần nâng cao sức khỏe , cải thiện sức khoẻ tổng quát.<br />
                 </h3>
               </div>
               <div id="HEADLINE16" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   NGƯỜI CẦN BỔ SUNG <br />DINH DƯỠNG<br />
                 </h3>
               </div>
               <div id="HEADLINE17" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Người ốm yếu, sức khỏe kém, thiếu chất cần bổ sung dinh dưỡng,
                   do kiêng khem<br />
                 </h3>
               </div>
               <div id="HEADLINE18" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   VẤN ĐỀ KHÁC TIỂU ĐƯỜNG<br />
                 </h3>
               </div>
               <div id="HEADLINE19" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Người có vấn đề về tiểu nhiều, tiểu đêm, tê bì tay chân, tiểu
                   đêm, mờ mắt, mất ngủ,&nbsp; ...<br />
                 </h3>
@@ -7155,11 +7385,11 @@
         </div>
       </div>
       <div id="SECTION5" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE31" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div
@@ -7168,13 +7398,13 @@
             class="ladi-element ladi-animation-hidden"
           >
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="GROUP10" class="ladi-element">
             <div class="ladi-group">
               <div id="BOX13" class="ladi-element">
-                <div class="ladi-box ladi-transition"></div>
+                <div class="ladi-box ladi-transition ladi-lazyload"></div>
               </div>
               <div
                 id="FORM8"
@@ -7184,12 +7414,12 @@
                 <form autocomplete="off" method="post" class="ladi-form">
                   <div id="BUTTON8" class="ladi-element">
                     <div class="ladi-button ladi-transition">
-                      <div class="ladi-button-background"></div>
+                      <div class="ladi-button-background ladi-lazyload"></div>
                       <div
                         id="BUTTON_TEXT8"
                         class="ladi-element ladi-button-headline"
                       >
-                        <p class="ladi-headline ladi-transition">
+                        <p class="ladi-headline ladi-transition ladi-lazyload">
                           ĐẶT MUA NGAY
                         </p>
                       </div>
@@ -7197,7 +7427,9 @@
                   </div>
                   <div id="FORM_ITEM15" class="ladi-element">
                     <div class="ladi-form-item-container">
-                      <div class="ladi-form-item-background"></div>
+                      <div
+                        class="ladi-form-item-background ladi-lazyload"
+                      ></div>
                       <div class="ladi-form-item">
                         <input
                           autocomplete="off"
@@ -7214,7 +7446,9 @@
                   </div>
                   <div id="FORM_ITEM16" class="ladi-element">
                     <div class="ladi-form-item-container">
-                      <div class="ladi-form-item-background"></div>
+                      <div
+                        class="ladi-form-item-background ladi-lazyload"
+                      ></div>
                       <div class="ladi-form-item">
                         <input
                           autocomplete="off"
@@ -7232,7 +7466,9 @@
                   </div>
                   <div id="FORM_ITEM17" class="ladi-element">
                     <div class="ladi-form-item-container">
-                      <div class="ladi-form-item-background"></div>
+                      <div
+                        class="ladi-form-item-background ladi-lazyload"
+                      ></div>
                       <div class="ladi-form-item">
                         <textarea
                           autocomplete="off"
@@ -7249,12 +7485,12 @@
                 </form>
               </div>
               <div id="HEADLINE23" class="ladi-element">
-                <h2 class="ladi-headline ladi-transition">
+                <h2 class="ladi-headline ladi-transition ladi-lazyload">
                   Ưu đãi cực lớn giảm 40%&nbsp;<br />
                 </h2>
               </div>
               <div id="HEADLINE22" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   ĐĂNG KÝ NGAY ĐỂ TRỞ THÀNH NGƯỜI MAY MẮN NHẬN ĐƯỢC PHẦN QUÀ ĐẶC
                   BIỆT
                 </h3>
@@ -7270,7 +7506,7 @@
               </div>
               <div id="IMAGE39" class="ladi-element">
                 <div class="ladi-image ladi-transition">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
             </div>
@@ -7278,15 +7514,15 @@
         </div>
       </div>
       <div id="SECTION7" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE40" class="ladi-element">
             <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="HEADLINE21" class="ladi-element">
-            <h3 class="ladi-headline">
+            <h3 class="ladi-headline ladi-lazyload">
               ĐÁNH GIÁ CỦA KHÁCH HÀNG SAU KHI SỬ DỤNG DIASURE SAU THỜI GIAN NGẮN
             </h3>
           </div>
@@ -7294,7 +7530,7 @@
             id="GALLERY4"
             class="ladi-element"
             data-max-item="6"
-            data-runtime-id="qsubiKfRjh"
+            data-runtime-id="vWrPRPgiwJ"
             data-current="0"
             data-is-next="true"
             data-scrolled="false"
@@ -7309,26 +7545,56 @@
                   class="ladi-gallery-view-arrow ladi-gallery-view-arrow-right"
                 ></div>
                 <div
-                  class="ladi-gallery-view-item selected"
+                  class="ladi-gallery-view-item selected ladi-lazyload"
                   data-index="0"
                 ></div>
-                <div class="ladi-gallery-view-item" data-index="1"></div>
-                <div class="ladi-gallery-view-item" data-index="2"></div>
-                <div class="ladi-gallery-view-item" data-index="3"></div>
-                <div class="ladi-gallery-view-item" data-index="4"></div>
-                <div class="ladi-gallery-view-item" data-index="5"></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="1"
+                ></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="2"
+                ></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="3"
+                ></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="4"
+                ></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="5"
+                ></div>
               </div>
               <div class="ladi-gallery-control">
                 <div class="ladi-gallery-control-box">
                   <div
-                    class="ladi-gallery-control-item selected"
+                    class="ladi-gallery-control-item selected ladi-lazyload"
                     data-index="0"
                   ></div>
-                  <div class="ladi-gallery-control-item" data-index="1"></div>
-                  <div class="ladi-gallery-control-item" data-index="2"></div>
-                  <div class="ladi-gallery-control-item" data-index="3"></div>
-                  <div class="ladi-gallery-control-item" data-index="4"></div>
-                  <div class="ladi-gallery-control-item" data-index="5"></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="1"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="2"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="3"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="4"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="5"
+                  ></div>
                 </div>
                 <div
                   class="ladi-gallery-control-arrow ladi-gallery-control-arrow-left opacity-0"
@@ -7345,33 +7611,33 @@
             class="ladi-element ladi-animation-hidden"
           >
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="GROUP29" class="ladi-element">
             <div class="ladi-group">
               <div id="IMAGE75" class="ladi-element">
                 <div class="ladi-image ladi-transition">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
               <div id="HEADLINE63" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Tăng cường sức đề kháng và cải thiện biến chứng tiểu đường<br />
                 </h3>
               </div>
               <div id="HEADLINE64" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Hỗ trợ ổn định lượng đường trong máu<br />
                 </h3>
               </div>
               <div id="HEADLINE65" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   Công thức ALA giúp hấp thụ dinh dưỡng hiệu quả hơn<br />
                 </h3>
               </div>
               <div id="HEADLINE66" class="ladi-element">
-                <h3 class="ladi-headline ladi-transition">
+                <h3 class="ladi-headline ladi-transition ladi-lazyload">
                   THAY THẾ BỮA ĂN CHÍNH, PHỤ<br />
                 </h3>
               </div>
@@ -7380,23 +7646,23 @@
         </div>
       </div>
       <div id="SECTION8" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE49" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="IMAGE43" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div
             id="GALLERY5"
             class="ladi-element"
             data-max-item="5"
-            data-runtime-id="jLIDgNcLLc"
+            data-runtime-id="qGkLdFePmM"
             data-current="0"
             data-is-next="true"
             data-scrolled="false"
@@ -7411,24 +7677,48 @@
                   class="ladi-gallery-view-arrow ladi-gallery-view-arrow-right"
                 ></div>
                 <div
-                  class="ladi-gallery-view-item selected"
+                  class="ladi-gallery-view-item selected ladi-lazyload"
                   data-index="0"
                 ></div>
-                <div class="ladi-gallery-view-item" data-index="1"></div>
-                <div class="ladi-gallery-view-item" data-index="2"></div>
-                <div class="ladi-gallery-view-item" data-index="3"></div>
-                <div class="ladi-gallery-view-item" data-index="4"></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="1"
+                ></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="2"
+                ></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="3"
+                ></div>
+                <div
+                  class="ladi-gallery-view-item ladi-lazyload"
+                  data-index="4"
+                ></div>
               </div>
               <div class="ladi-gallery-control">
                 <div class="ladi-gallery-control-box">
                   <div
-                    class="ladi-gallery-control-item selected"
+                    class="ladi-gallery-control-item selected ladi-lazyload"
                     data-index="0"
                   ></div>
-                  <div class="ladi-gallery-control-item" data-index="1"></div>
-                  <div class="ladi-gallery-control-item" data-index="2"></div>
-                  <div class="ladi-gallery-control-item" data-index="3"></div>
-                  <div class="ladi-gallery-control-item" data-index="4"></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="1"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="2"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="3"
+                  ></div>
+                  <div
+                    class="ladi-gallery-control-item ladi-lazyload"
+                    data-index="4"
+                  ></div>
                 </div>
                 <div
                   class="ladi-gallery-control-arrow ladi-gallery-control-arrow-left opacity-0"
@@ -7440,52 +7730,52 @@
             </div>
           </div>
           <div id="HEADLINE29" class="ladi-element">
-            <h3 class="ladi-headline">
+            <h3 class="ladi-headline ladi-lazyload">
               CÙNG NHỮNG TIÊU CHUẨN AN TOÀN KHẮT KHE NHẤT CỦA BỘ Y TẾ<br />
             </h3>
           </div>
         </div>
       </div>
       <div id="SECTION9" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE50" class="ladi-element">
             <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="IMAGE38" class="ladi-element">
             <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="HEADLINE33" class="ladi-element">
-            <h3 class="ladi-headline">Heading 3<br /></h3>
+            <h3 class="ladi-headline ladi-lazyload">Heading 3<br /></h3>
           </div>
           <div id="HEADLINE34" class="ladi-element">
-            <h3 class="ladi-headline ladi-transition">
+            <h3 class="ladi-headline ladi-transition ladi-lazyload">
               - Pha 5 muống Diasure với 150ml nước ấm<br />
             </h3>
           </div>
           <div id="HEADLINE35" class="ladi-element">
-            <h3 class="ladi-headline ladi-transition">
+            <h3 class="ladi-headline ladi-transition ladi-lazyload">
               - Ngày uống 2 lần: sáng và chiều (uống cách 30p sau bữa ăn
               chính)<br />
             </h3>
           </div>
           <div id="HEADLINE36" class="ladi-element">
-            <h3 class="ladi-headline ladi-transition">
+            <h3 class="ladi-headline ladi-transition ladi-lazyload">
               - Có thể thay thế bữa ăn phụ<br />
             </h3>
           </div>
         </div>
       </div>
       <div id="SECTION10" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE53" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div
@@ -7496,7 +7786,7 @@
             <form autocomplete="off" method="post" class="ladi-form">
               <div id="FORM_ITEM18" class="ladi-element">
                 <div class="ladi-form-item-container">
-                  <div class="ladi-form-item-background"></div>
+                  <div class="ladi-form-item-background ladi-lazyload"></div>
                   <div class="ladi-form-item">
                     <input
                       autocomplete="off"
@@ -7513,7 +7803,7 @@
               </div>
               <div id="FORM_ITEM19" class="ladi-element">
                 <div class="ladi-form-item-container">
-                  <div class="ladi-form-item-background"></div>
+                  <div class="ladi-form-item-background ladi-lazyload"></div>
                   <div class="ladi-form-item">
                     <input
                       autocomplete="off"
@@ -7531,12 +7821,14 @@
               </div>
               <div id="BUTTON9" class="ladi-element ladi-animation-hidden">
                 <div class="ladi-button ladi-transition">
-                  <div class="ladi-button-background"></div>
+                  <div class="ladi-button-background ladi-lazyload"></div>
                   <div
                     id="BUTTON_TEXT9"
                     class="ladi-element ladi-button-headline"
                   >
-                    <p class="ladi-headline ladi-transition">ĐĂNG KÝ ƯU TIÊN</p>
+                    <p class="ladi-headline ladi-transition ladi-lazyload">
+                      ĐĂNG KÝ ƯU TIÊN
+                    </p>
                   </div>
                 </div>
               </div>
@@ -7546,28 +7838,30 @@
         </div>
       </div>
       <div id="SECTION13" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="GROUP12" class="ladi-element ladi-auto-scroll">
             <div class="ladi-group">
               <div id="GROUP13" class="ladi-element">
                 <div class="ladi-group">
                   <div id="BOX14" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="HEADLINE43" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">
+                    <h3 class="ladi-headline ladi-transition ladi-lazyload">
                       1 đổi 1 trong 7 ngày nếu phát hiện ra lỗi do sản phẩm !
                     </h3>
                   </div>
                   <div id="HEADLINE44" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">đổi trả</h3>
+                    <h3 class="ladi-headline ladi-transition ladi-lazyload">
+                      đổi trả
+                    </h3>
                   </div>
                   <div id="BOX15" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="BOX16" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="SHAPE1" class="ladi-element">
                     <div class="ladi-shape ladi-transition">
@@ -7617,22 +7911,24 @@
               <div id="GROUP14" class="ladi-element">
                 <div class="ladi-group">
                   <div id="BOX17" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="HEADLINE45" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">
+                    <h3 class="ladi-headline ladi-transition ladi-lazyload">
                       Giao hàng nhanh tróng tận tay khách hàng trên toàn
                       quốc&nbsp;
                     </h3>
                   </div>
                   <div id="HEADLINE46" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">vận chuyển</h3>
+                    <h3 class="ladi-headline ladi-transition ladi-lazyload">
+                      vận chuyển
+                    </h3>
                   </div>
                   <div id="BOX18" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="BOX19" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="SHAPE2" class="ladi-element">
                     <div class="ladi-shape ladi-transition">
@@ -7843,21 +8139,23 @@
               <div id="GROUP15" class="ladi-element">
                 <div class="ladi-group">
                   <div id="BOX20" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="HEADLINE47" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">
+                    <h3 class="ladi-headline ladi-transition ladi-lazyload">
                       Chỉ thanh toán sau khi nhận được hàng và đồng ý mua hàng
                     </h3>
                   </div>
                   <div id="HEADLINE48" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">thanh toán</h3>
+                    <h3 class="ladi-headline ladi-transition ladi-lazyload">
+                      thanh toán
+                    </h3>
                   </div>
                   <div id="BOX21" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="BOX22" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="SHAPE3" class="ladi-element">
                     <div class="ladi-shape ladi-transition">
@@ -7898,21 +8196,23 @@
               <div id="GROUP16" class="ladi-element">
                 <div class="ladi-group">
                   <div id="BOX23" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="HEADLINE49" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">
+                    <h3 class="ladi-headline ladi-transition ladi-lazyload">
                       Mang đến khách hàng sp có ích và chất lượng luôn đảm bảo
                     </h3>
                   </div>
                   <div id="HEADLINE50" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">cam kết</h3>
+                    <h3 class="ladi-headline ladi-transition ladi-lazyload">
+                      cam kết
+                    </h3>
                   </div>
                   <div id="BOX24" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="BOX25" class="ladi-element">
-                    <div class="ladi-box ladi-transition"></div>
+                    <div class="ladi-box ladi-transition ladi-lazyload"></div>
                   </div>
                   <div id="SHAPE4" class="ladi-element">
                     <div class="ladi-shape ladi-transition">
@@ -7969,15 +8269,15 @@
         </div>
       </div>
       <div id="SECTION11" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE54" class="ladi-element">
             <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="HEADLINE37" class="ladi-element">
-            <h3 class="ladi-headline ladi-transition">
+            <h3 class="ladi-headline ladi-transition ladi-lazyload">
               DIASURE- GIẢI PHÁP CHĂM SÓC SỨC KHOẺ TOÀN DIỆN ĐƯỢC NHIỀU NGHỆ SĨ
               TIN DÙNG
             </h3>
@@ -7985,44 +8285,52 @@
         </div>
       </div>
       <div id="SECTION12" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
           <div id="IMAGE55" class="ladi-element">
             <div class="ladi-image">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="IMAGE56" class="ladi-element">
             <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="IMAGE57" class="ladi-element">
             <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="IMAGE58" class="ladi-element">
             <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="IMAGE59" class="ladi-element">
             <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background"></div>
+              <div class="ladi-image-background ladi-lazyload"></div>
             </div>
           </div>
           <div id="HEADLINE39" class="ladi-element">
-            <h3 class="ladi-headline ladi-transition">CHÍNH SÁCH THANH TOÁN</h3>
+            <h3 class="ladi-headline ladi-transition ladi-lazyload">
+              CHÍNH SÁCH THANH TOÁN
+            </h3>
           </div>
           <div id="HEADLINE40" class="ladi-element">
-            <h3 class="ladi-headline ladi-transition">CHÍNH SÁCH BẢO MẬT</h3>
+            <h3 class="ladi-headline ladi-transition ladi-lazyload">
+              CHÍNH SÁCH BẢO MẬT
+            </h3>
           </div>
           <div id="HEADLINE41" class="ladi-element">
-            <h3 class="ladi-headline ladi-transition">CHÍNH SÁCH GIAO HÀNG</h3>
+            <h3 class="ladi-headline ladi-transition ladi-lazyload">
+              CHÍNH SÁCH GIAO HÀNG
+            </h3>
           </div>
           <div id="HEADLINE42" class="ladi-element">
-            <h3 class="ladi-headline ladi-transition">CHÍNH SÁCH ĐỔI TRẢ</h3>
+            <h3 class="ladi-headline ladi-transition ladi-lazyload">
+              CHÍNH SÁCH ĐỔI TRẢ
+            </h3>
           </div>
           <div id="PARAGRAPH10" class="ladi-element">
             <div class="ladi-paragraph">
@@ -8136,30 +8444,30 @@
         </div>
       </div>
       <div id="SECTION_POPUP" class="ladi-section">
-        <div class="ladi-section-background"></div>
+        <div class="ladi-section-background ladi-lazyload"></div>
         <div class="ladi-container">
-          <div id="POPUP2" class="ladi-element" style="">
+          <div id="POPUP2" class="ladi-element">
             <div class="ladi-popup">
               <div class="ladi-popup-background"></div>
-              <div class="ladi-overlay"></div>
+              <div class="ladi-overlay ladi-lazyload"></div>
               <div id="BOX29" class="ladi-element">
-                <div class="ladi-box"></div>
+                <div class="ladi-box ladi-lazyload"></div>
               </div>
               <div id="IMAGE69" class="ladi-element">
                 <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
               <div id="HEADLINE55" class="ladi-element">
-                <h3 class="ladi-headline">ĐẶT HÀNG ONLINE</h3>
+                <h3 class="ladi-headline ladi-lazyload">ĐẶT HÀNG ONLINE</h3>
               </div>
               <div id="GROUP26" class="ladi-element">
                 <div class="ladi-group">
                   <div id="BOX30" class="ladi-element">
-                    <div class="ladi-box"></div>
+                    <div class="ladi-box ladi-lazyload"></div>
                   </div>
                   <div id="HEADLINE56" class="ladi-element">
-                    <h3 class="ladi-headline">
+                    <h3 class="ladi-headline ladi-lazyload">
                       ĐẶT MUA LIỀN TAY <br />NHẬN NGAY ƯU ĐÃI<br />
                     </h3>
                   </div>
@@ -8171,7 +8479,9 @@
                     <form autocomplete="off" method="post" class="ladi-form">
                       <div id="FORM_ITEM24" class="ladi-element">
                         <div class="ladi-form-item-container">
-                          <div class="ladi-form-item-background"></div>
+                          <div
+                            class="ladi-form-item-background ladi-lazyload"
+                          ></div>
                           <div class="ladi-form-item">
                             <input
                               autocomplete="off"
@@ -8189,18 +8499,24 @@
                       </div>
                       <div id="BUTTON12" class="ladi-element">
                         <div class="ladi-button">
-                          <div class="ladi-button-background"></div>
+                          <div
+                            class="ladi-button-background ladi-lazyload"
+                          ></div>
                           <div
                             id="BUTTON_TEXT12"
                             class="ladi-element ladi-button-headline"
                           >
-                            <p class="ladi-headline">ĐẶT MUA VỚI ƯU ĐÃI</p>
+                            <p class="ladi-headline ladi-lazyload">
+                              ĐẶT MUA VỚI ƯU ĐÃI
+                            </p>
                           </div>
                         </div>
                       </div>
                       <div id="FORM_ITEM25" class="ladi-element">
                         <div class="ladi-form-item-container">
-                          <div class="ladi-form-item-background"></div>
+                          <div
+                            class="ladi-form-item-background ladi-lazyload"
+                          ></div>
                           <div class="ladi-form-item">
                             <input
                               autocomplete="off"
@@ -8217,7 +8533,9 @@
                       </div>
                       <div id="FORM_ITEM26" class="ladi-element">
                         <div class="ladi-form-item-container">
-                          <div class="ladi-form-item-background"></div>
+                          <div
+                            class="ladi-form-item-background ladi-lazyload"
+                          ></div>
                           <div class="ladi-form-item">
                             <input
                               autocomplete="off"
@@ -8239,23 +8557,18 @@
               </div>
               <div id="IMAGE70" class="ladi-element">
                 <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            id="POPUP3"
-            class="ladi-element"
-            data-popup-backdrop="true"
-            style=""
-          >
+          <div id="POPUP3" class="ladi-element">
             <div class="ladi-popup">
               <div class="ladi-popup-background"></div>
-              <div class="ladi-overlay"></div>
+              <div class="ladi-overlay ladi-lazyload"></div>
               <div id="IMAGE71" class="ladi-element">
                 <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
               <div id="PARAGRAPH15" class="ladi-element">
@@ -8266,27 +8579,27 @@
               <div id="GROUP27" class="ladi-element">
                 <div class="ladi-group">
                   <div id="BOX31" class="ladi-element">
-                    <div class="ladi-box"></div>
+                    <div class="ladi-box ladi-lazyload"></div>
                   </div>
                   <div id="HEADLINE58" class="ladi-element">
-                    <h3 class="ladi-headline">1.370.000</h3>
+                    <h3 class="ladi-headline ladi-lazyload">1.370.000</h3>
                   </div>
                   <div id="HEADLINE59" class="ladi-element">
-                    <h3 class="ladi-headline">890.000/HỘP</h3>
+                    <h3 class="ladi-headline ladi-lazyload">890.000/HỘP</h3>
                   </div>
                 </div>
               </div>
               <div id="HEADLINE60" class="ladi-element">
-                <h3 class="ladi-headline">Chỉ còn</h3>
+                <h3 class="ladi-headline ladi-lazyload">Chỉ còn</h3>
               </div>
               <div id="BOX32" class="ladi-element">
-                <div class="ladi-box"></div>
+                <div class="ladi-box ladi-lazyload"></div>
               </div>
               <div id="BOX33" class="ladi-element">
-                <div class="ladi-box"></div>
+                <div class="ladi-box ladi-lazyload"></div>
               </div>
               <div id="HEADLINE61" class="ladi-element">
-                <h1 class="ladi-headline">
+                <h1 class="ladi-headline ladi-lazyload">
                   NHANH TAY ĐẶT HÀNG<br />ĐỂ NHẬN ƯU ĐÃI<br />
                 </h1>
               </div>
@@ -8298,7 +8611,9 @@
                 <form autocomplete="off" method="post" class="ladi-form">
                   <div id="FORM_ITEM27" class="ladi-element">
                     <div class="ladi-form-item-container">
-                      <div class="ladi-form-item-background"></div>
+                      <div
+                        class="ladi-form-item-background ladi-lazyload"
+                      ></div>
                       <div class="ladi-form-item">
                         <input
                           autocomplete="off"
@@ -8317,7 +8632,9 @@
                   </div>
                   <div id="FORM_ITEM28" class="ladi-element">
                     <div class="ladi-form-item-container">
-                      <div class="ladi-form-item-background"></div>
+                      <div
+                        class="ladi-form-item-background ladi-lazyload"
+                      ></div>
                       <div class="ladi-form-item">
                         <input
                           autocomplete="off"
@@ -8334,18 +8651,22 @@
                   </div>
                   <div id="BUTTON13" class="ladi-element">
                     <div class="ladi-button">
-                      <div class="ladi-button-background"></div>
+                      <div class="ladi-button-background ladi-lazyload"></div>
                       <div
                         id="BUTTON_TEXT13"
                         class="ladi-element ladi-button-headline"
                       >
-                        <p class="ladi-headline">GỬI - ĐẶT HÀNG</p>
+                        <p class="ladi-headline ladi-lazyload">
+                          GỬI - ĐẶT HÀNG
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div id="FORM_ITEM29" class="ladi-element">
                     <div class="ladi-form-item-container">
-                      <div class="ladi-form-item-background"></div>
+                      <div
+                        class="ladi-form-item-background ladi-lazyload"
+                      ></div>
                       <div class="ladi-form-item">
                         <input
                           autocomplete="off"
@@ -8362,7 +8683,9 @@
                   </div>
                   <div id="FORM_ITEM30" class="ladi-element">
                     <div class="ladi-form-item-container">
-                      <div class="ladi-form-item-background"></div>
+                      <div
+                        class="ladi-form-item-background ladi-lazyload"
+                      ></div>
                       <div
                         class="ladi-form-item ladi-form-checkbox ladi-form-checkbox-vertical"
                       >
@@ -8414,25 +8737,24 @@
                   <button type="submit" class="ladi-hidden"></button>
                 </form>
               </div>
-              <div id="IMAGE72" class="ladi-element ladi-animation">
+              <div id="IMAGE72" class="ladi-element ladi-animation-hidden">
                 <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
+                  <div class="ladi-image-background ladi-lazyload"></div>
                 </div>
               </div>
               <div data-action="true" id="GROUP28" class="ladi-element">
                 <div class="ladi-group">
                   <div id="BOX34" class="ladi-element">
-                    <div class="ladi-box"></div>
+                    <div class="ladi-box ladi-lazyload"></div>
                   </div>
                   <div id="IMAGE73" class="ladi-element">
                     <div class="ladi-image">
-                      <div class="ladi-image-background"></div>
+                      <div class="ladi-image-background ladi-lazyload"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="popup-close"></div>
           </div>
         </div>
       </div>
@@ -9039,11 +9361,6 @@
         g._v = "1.3.0";
       })(window, document, window["_fs_namespace"], "script", "user");
     </script>
-    <div
-      id="eJOY__extension_root"
-      class="eJOY__extension_root_class"
-      style="all: unset"
-    ></div>
     <iframe
       id="nr-ext-rsicon"
       style="
@@ -9055,8 +9372,13 @@
         border-style: none;
         background: transparent;
       "
-    ></iframe
-    ><textarea
+    ></iframe>
+    <div
+      id="eJOY__extension_root"
+      class="eJOY__extension_root_class"
+      style="all: unset"
+    ></div>
+    <textarea
       id="BFI_DATA"
       style="width: 1px; height: 1px; display: none"
     ></textarea
@@ -9113,11 +9435,12 @@
               tabindex="0"
               class="DDStyle"
               id="__LanguageMenu_header"
-             
+              onclick="return LanguageMenu &amp;&amp; !LanguageMenu.Show('__LanguageMenu_popup', event);"
+              onkeydown="return LanguageMenu &amp;&amp; !LanguageMenu.Show('__LanguageMenu_popup', event);"
               >English</span
             >
-            <div class="box">
-              <div class="box__content">
+            <div style="position: relative; text-align: left; left: 0">
+              <div style="position: absolute; width: ; left: 0px">
                 <div
                   class="DDStyle"
                   style="display: none"
@@ -9810,14 +10133,254 @@
         }, 1);
       </script>
     </div>
-    
-      
-    </div> 
     <script
       async=""
       charset="UTF-8"
       src="https://embed.tawk.to/_s/v4/app/642b759ae8c/languages/vi.js"
     ></script>
+    <div id="irouotpe5nf81684578986160" class="widget-visible">
+      <iframe
+        src="about:blank"
+        frameborder="0"
+        scrolling="no"
+        width="64px"
+        height="60px"
+        style="
+          outline: none !important;
+          visibility: visible !important;
+          resize: none !important;
+          box-shadow: none !important;
+          overflow: visible !important;
+          background: none !important;
+          opacity: 1 !important;
+          filter: alpha(opacity=100) !important;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important;
+          -mz-opacity: 1 !important;
+          -khtml-opacity: 1 !important;
+          top: auto !important;
+          right: 20px !important;
+          bottom: 20px !important;
+          left: auto !important;
+          position: fixed !important;
+          border: 0 !important;
+          min-height: 60px !important;
+          min-width: 64px !important;
+          max-height: 60px !important;
+          max-width: 64px !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          -moz-transition-property: none !important;
+          -webkit-transition-property: none !important;
+          -o-transition-property: none !important;
+          transition-property: none !important;
+          transform: none !important;
+          -webkit-transform: none !important;
+          -ms-transform: none !important;
+          width: 64px !important;
+          height: 60px !important;
+          display: block !important;
+          z-index: 1000001 !important;
+          background-color: transparent !important;
+          cursor: none !important;
+          float: none !important;
+          border-radius: unset !important;
+          pointer-events: auto !important;
+          clip: auto !important;
+          color-scheme: light !important;
+        "
+        id="ql9eljalu55o1684578986183"
+        class=""
+        title="chat widget"
+      ></iframe
+      ><iframe
+        src="about:blank"
+        frameborder="0"
+        scrolling="no"
+        width="350px"
+        height="520px"
+        style="
+          outline: none !important;
+          visibility: visible !important;
+          resize: none !important;
+          box-shadow: none !important;
+          overflow: visible !important;
+          background: none !important;
+          opacity: 1 !important;
+          filter: alpha(opacity=100) !important;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important;
+          -mz-opacity: 1 !important;
+          -khtml-opacity: 1 !important;
+          top: auto !important;
+          right: 10px !important;
+          bottom: 90px !important;
+          left: auto !important;
+          position: fixed !important;
+          border: 0 !important;
+          min-height: 520px !important;
+          min-width: 350px !important;
+          max-height: 520px !important;
+          max-width: 350px !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          -moz-transition-property: none !important;
+          -webkit-transition-property: none !important;
+          -o-transition-property: none !important;
+          transition-property: none !important;
+          transform: none !important;
+          -webkit-transform: none !important;
+          -ms-transform: none !important;
+          width: 350px !important;
+          height: 520px !important;
+          display: none !important;
+          z-index: auto !important;
+          background-color: transparent !important;
+          cursor: none !important;
+          float: none !important;
+          border-radius: 5px !important;
+          pointer-events: auto !important;
+          clip: auto !important;
+          color-scheme: light !important;
+        "
+        id="c8g0vonfqjgg1684578986315"
+        class=""
+        title="chat widget"
+      ></iframe
+      ><iframe
+        src="about:blank"
+        frameborder="0"
+        scrolling="no"
+        width="360px"
+        height="55px"
+        style="
+          outline: none !important;
+          visibility: visible !important;
+          resize: none !important;
+          box-shadow: none !important;
+          overflow: visible !important;
+          background: none !important;
+          opacity: 1 !important;
+          filter: alpha(opacity=100) !important;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important;
+          -mz-opacity: 1 !important;
+          -khtml-opacity: 1 !important;
+          top: auto !important;
+          right: 20px !important;
+          bottom: 100px;
+          left: auto !important;
+          position: fixed !important;
+          border: 0 !important;
+          min-height: 55px !important;
+          min-width: 360px !important;
+          max-height: 55px !important;
+          max-width: 360px !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          -moz-transition-property: none !important;
+          -webkit-transition-property: none !important;
+          -o-transition-property: none !important;
+          transition-property: none !important;
+          transform: none !important;
+          -webkit-transform: none !important;
+          -ms-transform: none !important;
+          width: 360px !important;
+          height: 55px !important;
+          display: none !important;
+          z-index: auto !important;
+          background-color: transparent !important;
+          cursor: none !important;
+          float: none !important;
+          border-radius: unset !important;
+          pointer-events: auto !important;
+          clip: auto !important;
+          color-scheme: light !important;
+        "
+        id="veb0lchfuq4o1684578986220"
+        class=""
+        title="chat widget"
+      ></iframe
+      ><iframe
+        src="about:blank"
+        frameborder="0"
+        scrolling="no"
+        width="124px"
+        height="95px"
+        style="
+          outline: none !important;
+          visibility: visible !important;
+          resize: none !important;
+          box-shadow: none !important;
+          overflow: visible !important;
+          background: none !important;
+          opacity: 1 !important;
+          filter: alpha(opacity=100) !important;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important;
+          -mz-opacity: 1 !important;
+          -khtml-opacity: 1 !important;
+          top: auto !important;
+          right: 0px !important;
+          bottom: 30px !important;
+          left: auto !important;
+          position: fixed !important;
+          border: 0 !important;
+          min-height: 95px !important;
+          min-width: 124px !important;
+          max-height: 95px !important;
+          max-width: 124px !important;
+          padding: 0 !important;
+          margin: 0px 0 0 0 !important;
+          -moz-transition-property: none !important;
+          -webkit-transition-property: none !important;
+          -o-transition-property: none !important;
+          transition-property: none !important;
+          transform: rotate(0deg) translateZ(0);
+          -webkit-transform: rotate(0deg) translateZ(0);
+          -ms-transform: rotate(0deg) translateZ(0);
+          width: 124px !important;
+          height: 95px !important;
+          display: none !important;
+          z-index: 1000002 !important;
+          background-color: transparent !important;
+          cursor: none !important;
+          float: none !important;
+          border-radius: unset !important;
+          pointer-events: auto !important;
+          clip: auto !important;
+          color-scheme: light !important;
+          -moz-transform: rotate(0deg) translateZ(0);
+          -o-transform: rotate(0deg) translateZ(0);
+          transform-origin: 0;
+          -moz-transform-origin: 0;
+          -webkit-transform-origin: 0;
+          -o-transform-origin: 0;
+          -ms-transform-origin: 0;
+        "
+        id="eg9n4s3ca8tg1684578986205"
+        class=""
+        title="chat widget"
+      ></iframe>
+    </div>
   </body>
+  <iframe
+    id="__JSBridgeIframe_1.0__"
+    title="jsbridge___JSBridgeIframe_1.0__"
+    style="display: none"
+  ></iframe
+  ><iframe
+    id="__JSBridgeIframe_SetResult_1.0__"
+    title="jsbridge___JSBridgeIframe_SetResult_1.0__"
+    style="display: none"
+  ></iframe
+  ><iframe
+    id="__JSBridgeIframe__"
+    title="jsbridge___JSBridgeIframe__"
+    style="display: none"
+  ></iframe
+  ><iframe
+    id="__JSBridgeIframe_SetResult__"
+    title="jsbridge___JSBridgeIframe_SetResult__"
+    style="display: none"
+  ></iframe
+  ><grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
 </html>
-
